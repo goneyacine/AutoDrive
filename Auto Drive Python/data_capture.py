@@ -19,21 +19,24 @@ while True:
   print(f"Accepted connection from {client_address}") 
   frames = []
   player_inputs = []
+  mvt_data = []
   while True:
-         data = client_socket.recv(120016) 
-         if len(data) == 120016:
-          inputs = struct.unpack('4I',data[:16])
+         data = client_socket.recv(3096) 
+         if len(data) == 3096:
+          inputs = struct.unpack('3I',data[:12])
           player_inputs.append(inputs)
-          frame = np.frombuffer(data[16:], dtype=np.uint8)
-          frame = frame.reshape((200, 200, 3))
-          frame = cv2.rotate(frame, cv2.ROTATE_180)
-          frame = cv2.resize(frame,(64,64))
-          frames.append(frame)
+          mvt_data.append(struct.unpack('fff',data[12:24]))
+          frame = np.frombuffer(data[24:], dtype=np.uint8)
+          frame = frame.reshape((32, 32, 3))
+          frames.append(frame) 
          if not data:
+             print(len(frames),len(player_inputs))
              with open('data/player_inputs.txt', 'w') as file:
                      file.write(str(player_inputs))
-             
+             with open('data/mvt_data.txt', 'w') as file:
+                     file.write(str(mvt_data))
              for i, frame in enumerate(frames):
-              cv2.imwrite(f'data/frames/frame_{i}.png', frame)
+                 cv2.imwrite(f'data/frames/frame_{i}.png', frame)
+             print('done...')
              break
       
