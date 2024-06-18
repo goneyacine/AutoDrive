@@ -88,27 +88,27 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1562}
+      Script: {instanceID: 1514}
     - Class: 114
-      Script: {instanceID: 4314}
+      Script: {instanceID: 1564}
     - Class: 114
-      Script: {instanceID: 6988}
+      Script: {instanceID: 6986}
+    - Class: 114
+      Script: {instanceID: 6990}
     - Class: 114
       Script: {instanceID: 6992}
     - Class: 114
-      Script: {instanceID: 6994}
+      Script: {instanceID: 7000}
     - Class: 114
       Script: {instanceID: 7002}
     - Class: 114
       Script: {instanceID: 7004}
     - Class: 114
-      Script: {instanceID: 7006}
+      Script: {instanceID: 7010}
     - Class: 114
-      Script: {instanceID: 7012}
+      Script: {instanceID: 7968}
     - Class: 114
-      Script: {instanceID: 7656}
-    - Class: 114
-      Script: {instanceID: 30446}
+      Script: {instanceID: 7972}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -122,6 +122,12 @@ ScriptsOnlyBuild:
     - Class: 196
       Script: {instanceID: 0}
   scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: 8bfd4a7744e2c37468ee25566511925c
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: AIController
   - hash:
       serializedVersion: 2
       Hash: 5ebc58ec194dd44630b25fcc270ad4af
@@ -412,12 +418,6 @@ ScriptsOnlyBuild:
     className: UnityOnMouseDownMessageListener
   - hash:
       serializedVersion: 2
-      Hash: dfbcf4a5e0e6709b7ce1b7dbc0e2379c
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: DepthCamera
-  - hash:
-      serializedVersion: 2
       Hash: b6307dfc54cca9ba44f47185c578b0ce
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -626,12 +626,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
     className: TMP_SubMeshUI
-  - hash:
-      serializedVersion: 2
-      Hash: f6b4fb55555efee8935832fe0d4caf0d
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: AIController
   - hash:
       serializedVersion: 2
       Hash: 9078325c2a6f6a2d9612ade897511860
@@ -1336,12 +1330,6 @@ ScriptsOnlyBuild:
     className: ShowValueFromSlider
   - hash:
       serializedVersion: 2
-      Hash: a4e8ba4265bf42e6976156a2b46f4c97
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: DataCapture
-  - hash:
-      serializedVersion: 2
       Hash: d8e25e54be164c956ca61e3cbddf6b34
     assemblyName: Assembly-CSharp
     namespaceName: VehiclePhysics.UI
@@ -1394,6 +1382,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: DeathManager
+  - hash:
+      serializedVersion: 2
+      Hash: a4e8ba4265bf42e6976156a2b46f4c97
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: DataCapture
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity

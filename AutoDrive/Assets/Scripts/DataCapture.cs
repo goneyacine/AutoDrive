@@ -20,6 +20,7 @@ public class DataCapture : MonoBehaviour
     private float angularVelocity;
 
     private float lastSampleTime;
+    private bool record = true;
 
     private Rigidbody rb;
     void Start()
@@ -32,8 +33,11 @@ public class DataCapture : MonoBehaviour
     }
     void Update()
     {
-
-        if (Time.time - lastSampleTime > 1 / (float)sampleRate)
+        if(Input.GetKeyDown(KeyCode.Y))
+           record = true;
+        else if(Input.GetKeyDown(KeyCode.T))
+           record = false;
+        if (Time.time - lastSampleTime > 1 / (float)sampleRate && record)
         {
             angularVelocity = (transform.eulerAngles.y - lastAngle) * (1 / (float)sampleRate);
             lastAngle = transform.eulerAngles.y;

@@ -2153,6 +2153,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sampleRate: 15
   tcpPort: 2184
+  collisonBoxSize: {x: 1, y: 0.51, z: 1.7}
+  collisionMask:
+    serializedVersion: 2
+    m_Bits: 0
+  maxCollisionTime: 4
+  score: 0
+  startTime: 0
 --- !u!114 &225890087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11926,7 +11933,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 479654, guid: 155a997be38c3d8429b81fd742b37cec, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -143.5
+      value: -144.62
       objectReference: {fileID: 0}
     - target: {fileID: 479654, guid: 155a997be38c3d8429b81fd742b37cec, type: 3}
       propertyPath: m_LocalRotation.w
