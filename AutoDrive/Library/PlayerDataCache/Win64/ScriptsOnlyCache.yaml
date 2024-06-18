@@ -3,6 +3,7 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - AIController
     - DataCapture
+    - DeathManager
     Unity.PlasticSCM.Editor.dll:
     - Unity.PlasticSCM.Editor.PlasticWindow
     Unity.Rider.Editor.dll:
@@ -87,25 +88,27 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1560}
+      Script: {instanceID: 1562}
     - Class: 114
-      Script: {instanceID: 4310}
-    - Class: 114
-      Script: {instanceID: 6984}
+      Script: {instanceID: 4314}
     - Class: 114
       Script: {instanceID: 6988}
     - Class: 114
-      Script: {instanceID: 6990}
+      Script: {instanceID: 6992}
     - Class: 114
-      Script: {instanceID: 6998}
-    - Class: 114
-      Script: {instanceID: 7000}
+      Script: {instanceID: 6994}
     - Class: 114
       Script: {instanceID: 7002}
     - Class: 114
-      Script: {instanceID: 7008}
+      Script: {instanceID: 7004}
     - Class: 114
-      Script: {instanceID: 7652}
+      Script: {instanceID: 7006}
+    - Class: 114
+      Script: {instanceID: 7012}
+    - Class: 114
+      Script: {instanceID: 7656}
+    - Class: 114
+      Script: {instanceID: 30446}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -407,6 +410,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnMouseDownMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: dfbcf4a5e0e6709b7ce1b7dbc0e2379c
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: DepthCamera
   - hash:
       serializedVersion: 2
       Hash: b6307dfc54cca9ba44f47185c578b0ce
@@ -1379,6 +1388,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: d277360ef0378f28732092dbdd9a789e
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: DeathManager
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity

@@ -310,6 +310,8 @@
 -analyzer:"D:/2022.3.20f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Scripts/AIController.cs"
 "Assets/Scripts/DataCapture.cs"
+"Assets/Scripts/DeathManager.cs"
+"Assets/Scripts/DepthCamera.cs"
 "Assets/Vehicle Physics Pro/Sample Assets/Scripts/Utility/BankedPlatform.cs"
 "Assets/Vehicle Physics Pro/Sample Assets/Scripts/Utility/CaptureScreenshot.cs"
 "Assets/Vehicle Physics Pro/Sample Assets/Scripts/Utility/EndlessMovingSurface.cs"
